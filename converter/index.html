@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Number conversion | welcome</title>
+        <link rel="stylesheet" href="./style.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Spartan&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="root">
+            <header class="header">
+                <div class="header__text">
+                    <h1>Number Converter</h1>
+                    <hr class="hr" />
+                    <small>Convert valid number system</small>
+                </div>
+            </header>
+
+            <div class="main">
+                <div class="main__text">
+                    <h3>Supported formats (Binary, Decimal, Octal and Hexadecimal.)</h3>
+                </div>
+
+                <div class="main__form">
+                    <form>
+                        <select value="" name="slct" id="slct">
+                            <option selected name="Decimal" id="integer">Decimal</option>
+                            <option name="Binary" id="boolean">Binary</option>
+                            <option name="Octal" id="octal">Octal</option>
+                            <option name="Hexadecimal" id="hexadecimal">Hexadecimal</option>
+                        </select>
+                        <input type="number" placeholder="Type Here" />
+                        <select value="">
+                            <option name="Binary" id="boolean">Binary</option>
+                            <option name="Decimal" id="integer">Decimal</option>
+                            <option name="Octal" id="octal">Octal</option>
+                            <option name="Hexadecimal" id="hexadecimal">Hexadecimal</option>
+                        </select>
+                        <br /><br />
+                        <button class="btn">Convert Number</button>
+                    </form>
+                </div>
+                <footer class="footer">
+                    <h3>Converted result</h3>
+                    <h1 id="result">43957854</h1>
+                </div>
+            </div>
+        </div>
+
+        <script src="./app.js"></script>
+    </body>
+</html>
